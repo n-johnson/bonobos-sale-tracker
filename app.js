@@ -51,7 +51,12 @@ app.get('/sales.json', LimitMiddleware, function(req, res) {
     }
 });
 
+
 Bonobos.start(); //Load data from bonobos if it isn't already loaded.
+
+var updateHanlder = setInterval(function() {
+    Bonobos.update(); //Update data once an hour
+}, 1000 * 60 * 60);
 
 app.listen(4000, function() {
     console.log('Express server listening on port 4000');

@@ -1,0 +1,8 @@
+{
+    "apps": [{
+        "name": "bonobos",
+        "script": "app.js",
+        "ignoreWatch": ["data.json", "sales.json"],
+        "watch": true
+    }]
+}
