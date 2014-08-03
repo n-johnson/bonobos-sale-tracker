@@ -1,0 +1,17 @@
+{
+    "name": "Bonobos-Sale-Tracker",
+    "version": "1.0.0",
+    "description": "Tracks sales on bonobos.com via their JSON api. Finds hidden sales by comparing all of the products vs. those in the sale category.",
+    "author": "Nathan Johnson <node@njohnson.me>",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "dependencies": {
+        "compression": "1.0.x",
+        "express": "4.7.x",
+        "ratelimiter": "1.x.x",
+        "redis": "^0.11.0",
+        "request": "2.x.x"
+    }
+}
